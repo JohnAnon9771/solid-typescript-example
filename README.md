@@ -6,10 +6,10 @@ SOLID é um acrônimo criado por Michael Feathers, após observar que cinco prin
 
 ## S.O.L.I.D: Os 5 princípios da POO
 
-<strong>S — Single Responsiblity Principle</strong> (Princípio da responsabilidade única)
-<strong>O — Open-Closed Principle</strong> (Princípio Aberto-Fechado)
-<strong>L — Liskov Substitution Principle</strong>(Princípio da substituição de Liskov)
-<strong>I — Interface Segregation Principle</strong>(Princípio da Segregação da Interface)
-<strong>D — Dependency Inversion Principle</strong>(Princípio da inversão da dependência)
+<p><strong>S — Single Responsiblity Principle</strong> (Princípio da responsabilidade única)</p>
+<p><strong>O — Open-Closed Principle</strong> (Princípio Aberto-Fechado)</p>
+<p><strong>L — Liskov Substitution Principle</strong>(Princípio da substituição de Liskov)</p>
+<p><strong>I — Interface Segregation Principle</strong>(Princípio da Segregação da Interface)</p>
+<p><strong>D — Dependency Inversion Principle</strong>(Princípio da inversão da dependência)</p>
 
 <p>Esses princípios ajudam o programador a escrever códigos mais limpos, separando responsabilidades, diminuindo acoplamentos, facilitando na refatoração e estimulando o reaproveitamento do código.</p>
