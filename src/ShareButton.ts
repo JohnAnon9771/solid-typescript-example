@@ -1,8 +1,12 @@
+import EventHandler from "./EventHandler";
+
 export default class ShareButton {
+  eventHandler: EventHandler;
   url: string;
 
   constructor(url: string) {
     this.url = url;
+    this.eventHandler = new EventHandler();
   }
 
   bind(className: string, socialNetwork: string) {
@@ -14,12 +18,11 @@ export default class ShareButton {
       link = `http://www.facebook.com/share.php?u=${this.url}`;
     }
     if (socialNetwork === "linkedin") {
-      link = `http://www.linkedin.com/shareArticle?u=${this.url}`;
+      link = `http://www.linkedin.com/shareArticle?url=${this.url}`;
     }
 
-    const elements: any = document.querySelectorAll(className);
-    for (const element of elements) {
-      element.addEventListener("click", () => window.open(link));
-    }
+    this.eventHandler.addEventListenerToClass(className, "click", () =>
+      window.open(link)
+    );
   }
 }
